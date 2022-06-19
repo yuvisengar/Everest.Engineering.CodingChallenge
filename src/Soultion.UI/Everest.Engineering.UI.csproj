@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Solution.Business.Models\Everest.Engineering.Business.Models.csproj" />
+    <ProjectReference Include="..\Solution.Business\Everest.Engineering.Business.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.23" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Solution.Business.Models\Everest.Engineering.Business.Models.csproj" />
+    <ProjectReference Include="..\Solution.Data.Models\Everest.Engineering.Data.Models.csproj" />
+  </ItemGroup>
+
+</Project>

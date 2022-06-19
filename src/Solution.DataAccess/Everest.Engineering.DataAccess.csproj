@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Solution.Business.Models\Everest.Engineering.Business.Models.csproj" />
+    <ProjectReference Include="..\Solution.Data\Everest.Engineering.Data.csproj" />
+  </ItemGroup>
+
+</Project>

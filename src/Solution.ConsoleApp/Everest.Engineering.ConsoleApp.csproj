@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.Development.json" />
+    <None Remove="appsettings.json" />
+    <None Remove="appsettings.PreProduction.json" />
+    <None Remove="appsettings.Production.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.PreProduction.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.Production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.23" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.23" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.23" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.23" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.23" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.23" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="3.1.23" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Soultion.UI\Everest.Engineering.UI.csproj" />
+  </ItemGroup>
+
+</Project>
